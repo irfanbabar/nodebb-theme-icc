@@ -1,7 +1,21 @@
 @import "../nodebb-theme-persona/theme";
 @import "./less/colours.less";
 
+@font-path: "./fonts/cindie-2";
+@font-face {
+  font-family: "Cindie-2-G";
+  src: url("@{font-path}/Cindie2-G.ttf");
+  src: url("@{font-path}/Cindie2-G.eot?#iefix") format("embedded-opentype"),
+    url("@{font-path}/Cindie2-G.woff2") format("woff2"),
+    url("@{font-path}/Cindie2-G.woff") format("woff"),
+    url("@{font-path}/Cindie2-G.ttf") format("truetype");
+}
+
 // === Generic css changes ===
+body {
+  font-family: "Cindie-2-G";
+}
+
 a {
   color: @dark-core;
 }
@@ -149,11 +163,11 @@ input[type="checkbox"] {
 }
 
 #footer {
-  background-color: #101820;
+  background-color: @dark-core;
   padding: 10px;
   border-radius: 3px;
   .footer-inner {
-    color: white;
+    color: @white;
     img.footer-logo {
       width: 30px;
       margin-right: 10px;
