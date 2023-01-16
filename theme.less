@@ -1,18 +1,38 @@
 @import "../nodebb-theme-persona/theme";
 @import "./less/colours.less";
 
-@font-path: "./fonts/cindie-2";
+@cindie2-path: "./fonts/cindie-2";
+@space-grotesk-path: "./fonts/space-grotesk";
 @font-face {
   font-family: "Cindie-2-G";
-  src: url("@{font-path}/Cindie2-G.ttf");
-  src: url("@{font-path}/Cindie2-G.eot?#iefix") format("embedded-opentype"),
-    url("@{font-path}/Cindie2-G.woff2") format("woff2"),
-    url("@{font-path}/Cindie2-G.woff") format("woff"),
-    url("@{font-path}/Cindie2-G.ttf") format("truetype");
+  src: url("@{cindie2-path}/Cindie2-G.ttf");
+  src: url("@{cindie2-path}/Cindie2-G.eot?#iefix") format("embedded-opentype"),
+    url("@{cindie2-path}/Cindie2-G.woff2") format("woff2"),
+    url("@{cindie2-path}/Cindie2-G.woff") format("woff"),
+    url("@{cindie2-path}/Cindie2-G.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space-Grotesk";
+  src: url("@{space-grotesk-path}/SpaceGrotesk-Regular.ttf");
+  src: url("@{space-grotesk-path}/SpaceGrotesk-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("@{space-grotesk-path}/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("@{space-grotesk-path}/SpaceGrotesk-Regular.woff") format("woff"),
+    url("@{space-grotesk-path}/SpaceGrotesk-Regular.ttf") format("truetype");
 }
 
 // === Generic css changes ===
 body {
+  font-family: "Space-Grotesk";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
   font-family: "Cindie-2-G";
 }
 
