@@ -1,6 +1,6 @@
 {
-    "id": "nodebb-theme-quickstart",
-    "name": "My Theme Name",
-    "description": "Enter a description here",
+    "id": "nodebb-theme-icc",
+    "name": "ICC Theme",
+    "description": "Theme for ICC specific",
     "url": "https://github.com/nodebb/nodebb-theme-quickstart"
 }
