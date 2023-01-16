@@ -1,5 +1,162 @@
 @import "../nodebb-theme-persona/theme";
+@import "./less/colours.less";
 
-body {
-  background-color: black;
+// === Generic css changes ===
+a {
+  color: @dark-core;
+}
+a:hover {
+  color: @pure-grey;
+}
+input[type="checkbox"] {
+  accent-color: @arctic;
+}
+
+.btn-primary {
+  color: @dark-core;
+  background-color: @arctic;
+  border-color: @dark-core;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.open > .dropdown-toggle.btn-primary {
+  color: @arctic;
+  background-color: @dark-core;
+  border-color: @pure-grey;
+  outline: none;
+}
+
+.btn-default {
+  color: @dark-core;
+  background-color: @white;
+  border-color: @dark-core;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  color: @dark-core;
+  border-color: @dark-core;
+  outline: none;
+}
+
+.btn-info {
+  color: @dark-core;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active {
+  color: @dark-core;
+  border-color: @dark-core;
+  outline: none;
+}
+
+.btn-success {
+  background-color: @skin;
+  border-color: @dark-core;
+  color: @dark-core;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: @lil-dar-skin;
+  color: @dark-core;
+  border-color: @dark-core;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: @arctic;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: @arctic;
+}
+
+.alert-warning {
+  background-color: @skin;
+  border-color: @skin;
+}
+.alert-danger {
+  background-color: @lame-pink;
+  border-color: @lame-pink;
+}
+.alert-info {
+  background-color: @arctic;
+  border-color: @arctic;
+}
+.alert-success {
+  background-color: @peace-green;
+  border-color: @peace-green;
+}
+
+// === Specific css changes ===
+.slideout-panel {
+  #header-menu {
+    background-color: @dark-core;
+    .navbar-header {
+      :nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        margin-right: 10px;
+        > img.forum-logo {
+          height: 35px;
+        }
+      }
+    }
+    .navbar-brand.forum-title {
+      display: none;
+    }
+  }
+}
+
+.category > ul > li:not(.unread) h2 a {
+  color: @dark-core;
+}
+
+.categories .category-1 .icon {
+  border: 1px solid @dark-core;
+  background-color: @skin !important;
+  > i {
+    color: @dark-core;
+  }
+}
+
+.categories .category-2 .icon {
+  background-color: @arctic !important;
+  border: 1px solid @dark-core;
+  > i {
+    color: @dark-core;
+  }
+}
+
+.categories .category-3 .icon {
+  background-color: @mellow !important;
+  border: 1px solid @dark-core;
+  > i {
+    color: @dark-core;
+  }
+}
+
+.categories .category-4 .icon {
+  background-color: @peace-green !important;
+  border: 1px solid @dark-core;
+  > i {
+    color: @dark-core;
+  }
+}
+
+#footer {
+  background-color: #101820;
+  padding: 10px;
+  border-radius: 3px;
+  .footer-inner {
+    color: white;
+    img.footer-logo {
+      width: 30px;
+      margin-right: 10px;
+    }
+  }
 }
