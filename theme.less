@@ -130,7 +130,7 @@ input[type="checkbox"] {
   #header-menu {
     background-color: @dark-core;
     .navbar-header {
-      :nth-child(3) {
+      a:first-of-type {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,6 +192,7 @@ input[type="checkbox"] {
     img.footer-logo {
       width: 30px;
       margin-right: 10px;
+      display: inline-block;
     }
   }
 }

@@ -1,6 +1,6 @@
 {
     "name": "nodebb-theme-icc",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Enter a description here",
     "main": "theme.less",
     "keywords": [],
