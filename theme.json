@@ -1,5 +1,5 @@
 {
-    "id": "nodebb-theme-icc",
+    "id": "@chessclub/nodebb-theme-icc",
     "name": "ICC Theme",
     "description": "Theme for ICC specific",
     "url": "https://gitlab.com/irfanbabar/nodebb-icc-theme-package.git",

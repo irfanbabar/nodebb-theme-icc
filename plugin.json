@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-icc",
+	"id": "@chessclub/nodebb-theme-icc",
 	"hooks": [
 		{ "hook": "filter:middleware.renderHeader", "method": "renderHeader" },
 		{ "hook": "filter:middleware.renderFooter", "method": "renderFooter" },
