@@ -1,38 +1,49 @@
 {
-    "name": "nodebb-theme-icc",
-    "version": "1.0.1",
-    "description": "Enter a description here",
-    "main": "lib/theme.js",
-    "keywords": [],
-    "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "npx lint-staged",
-            "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
-        }
-    },
-    "lint-staged": {
-        "*.js": [
-            "eslint --fix",
-            "git add"
-        ]
-    },
-    "dependencies": {
-        "bent": "^7.3.12",
-        "jsdom": "^19.0.0",
-        "node-fetch": "^2"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "17.4.2",
-        "@commitlint/config-angular": "17.4.2",
-        "eslint": "8.33.0",
-        "eslint-config-airbnb-base": "15.0.0",
-        "eslint-plugin-import": "2.27.5",
-        "husky": "8.0.3",
-        "lint-staged": "13.1.0"
-    },
-    "author": {
-        "name": "Irfan Babar",
-        "email": "irfan@lumina.nyc"
+  "name": "@chessclub/nodebb-theme-icc",
+  "version": "1.0.1",
+  "description": "Enter a description here",
+  "main": "lib/theme.js",
+  "keywords": [],
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged",
+      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "bent": "^7.3.12",
+    "jsdom": "^19.0.0",
+    "node-fetch": "^2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.4.2",
+    "@commitlint/config-angular": "17.4.2",
+    "eslint": "8.33.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "husky": "8.0.3",
+    "lint-staged": "13.1.0"
+  },
+  "author": "Irfan Babar <irfan@lumina.nyc>",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanbabar/nodebb-theme-icc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/irfanbabar/nodebb-theme-icc/issues"
+  },
+  "homepage": "https://github.com/irfanbabar/nodebb-theme-icc#readme"
 }
