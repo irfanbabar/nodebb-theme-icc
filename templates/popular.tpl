@@ -10,7 +10,7 @@
 			<!-- IF canPost -->
 			<!-- IMPORT partials/buttons/newTopic.tpl -->
 			<!-- ELSE -->
-			<a component="category/post/guest" href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
+			<a component="category/post/guest" href="[[global:customLogin.path]]" class="btn btn-primary">[[category:guest-login-post]]</a>
 			<!-- ENDIF canPost -->
 		</div>
 
