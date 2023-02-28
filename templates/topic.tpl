@@ -33,8 +33,11 @@
 				<div class="inline-block hidden-xs">
 					<!-- IMPORT partials/topic/stats.tpl -->
 				</div>
+				<!-- DISABLED FOR NOW -->
+				{{{ if false }}}
 				{{{ if !feeds:disableRSS }}}
 				{{{ if rssFeedUrl }}}<a class="hidden-xs" target="_blank" href="{rssFeedUrl}"><i class="fa fa-rss-square"></i></a>{{{ end }}}
+				{{{ end }}}
 				{{{ end }}}
 				{{{ if browsingUsers }}}
 				<div class="inline-block hidden-xs">
