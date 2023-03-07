@@ -50,7 +50,16 @@
         </div>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuHamburger">
           <a class="dropdown-item" href="https://icclearningcenter.lumina-previews.com/">Learn</a>
-          <a class="dropdown-item" href="https://iccstage.net/article/archive/">Watch</a>
+          <div class="dropdown">
+            <div id="dropdownMenuSubLink" class="dropdown-toggle trigger-link-cont" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="submenu">Watch</a>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuSubLink">
+              <a class="dropdown-item" href="https://iccstage.net">Live Games</a>
+              <a class="dropdown-item" href="https://iccstage.net/videos">Videos</a>
+            </div>
+          </div>
+          <!-- <a class="dropdown-item" href="https://iccstage.net/article/archive/">Watch</a> -->
           <a class="dropdown-item" href="https://iccstage.net/article/archive/">News</a>
           <a class="dropdown-item" href="https://shop.iccstage.net/">Shop</a>
           <a class="dropdown-item" href="http://forums.iccstage.net/">Forums</a>

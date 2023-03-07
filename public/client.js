@@ -17,3 +17,10 @@
 $(document).ready(function () {
 	// Your code goes here
 });
+
+// submenu functionality for dropdown bootstrap
+$(document).on('click', ".dropdown .submenu", function(e) {
+	e.stopPropagation();
+	const parent = $(this).closest('.dropdown');
+	parent.toggleClass('open');
+});
