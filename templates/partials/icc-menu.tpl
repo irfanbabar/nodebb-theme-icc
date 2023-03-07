@@ -15,8 +15,15 @@
         <li class="flex gap-8 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://icclearningcenter.lumina-previews.com/">Learn</a></li>
         <li class="flex gap-8 big-phone:super-hidden">
-          <a class="pt-0.5 uppercase tracking-widest"
-            href="https://iccstage.net/article/archive/">Watch</a>
+          <div class="dropdown">
+            <div id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="javascript:void">Watch</a>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="https://iccstage.net">Live Games</a>
+              <a class="dropdown-item" href="https://iccstage.net/videos">Videos</a>
+            </div>
+          </div>
         </li>
         <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://iccstage.net/article/archive/">News</a></li>
@@ -31,17 +38,17 @@
         <div class="flex justify-end gap-4"><button
             class="tracking-widest btn-black big-phone:text-xs big-phone:pt-[7px]">
             <h4>Log in</h4>
-          </button><button class="tracking-widest btn-blue big-phone:text-xs big-phone:pt-[7px]]">
+          </button><button class="tracking-widest btn-blue big-phone:text-xs big-phone:pt-[7px]">
             <h4>Sign up</h4>
           </button></div>
       </div>-->
       <div class="hamburger-cont gap-9 tablet:hidden md-tablet:hidden big-phone:block dropdown">
-        <div class="relative inline-block text-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="relative inline-block text-left dropdown-toggle" id="dropdownMenuHamburger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div><button class="pt-0.5 uppercase font-cindie tracking-widest" id="headlessui-menu-button-:R38m:"
               type="button" aria-haspopup="menu" aria-expanded="false"><img
                 src="https://iccstage.net/assets/images/burguer.svg" class="cursor-pointer" alt="Burguer menu"></button></div>
         </div>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuHamburger">
           <a class="dropdown-item" href="https://icclearningcenter.lumina-previews.com/">Learn</a>
           <a class="dropdown-item" href="https://iccstage.net/article/archive/">Watch</a>
           <a class="dropdown-item" href="https://iccstage.net/article/archive/">News</a>

@@ -24,6 +24,27 @@
     url("@{space-grotesk-path}/SpaceGrotesk-Regular.ttf") format("truetype");
 }
 
+.dropdown-menu {
+  left: -75px;
+  border-radius: 0.6rem;
+  top: 40px;
+  max-width: 160px;
+  min-width: 112px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  > .dropdown-item {
+    font-size: 1.475rem;
+    font-family: 'Cindie-2-G';
+    display: block;
+    line-height: 1.25rem;
+    padding: 1rem 1.5rem;
+    text-align: right;
+    letter-spacing: .1em;
+    color: #252b35;
+  }
+}
+
 #header-menu .elementor-location-header .elementor-section {
 	padding-top: .5rem;
 }
@@ -283,6 +304,26 @@ input[type="checkbox"] {
             display: none;
           }
         }
+        li:nth-child(n+3) .dropdown-menu {
+          left: 0;
+          top: 25px;
+          max-width: 220px;
+          width: 220px;
+          .dropdown-item {
+            text-align: left;
+          }
+        }
+        li:nth-child(n+3) > .dropdown #dropdownMenuLink a {
+          letter-spacing: .1em;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-family: Cindie-2-G;
+          font-size: 2rem;
+          line-height: 0.75rem;
+          @media screen and (max-width: 650px) {
+            gap: 1.5rem;
+          }
+        }
         li:nth-child(n+3) > a {
           letter-spacing: .1em;
           text-transform: uppercase;
@@ -321,26 +362,6 @@ input[type="checkbox"] {
         }
         @media screen and (max-width: 570px) {
           display: block;
-        }
-        .dropdown-menu {
-          left: -75px;
-          border-radius: 0.6rem;
-          top: 40px;
-          max-width: 160px;
-          min-width: 112px;
-          padding-top: 8px;
-          padding-bottom: 8px;
-          text-transform: uppercase;
-          > .dropdown-item {
-            font-size: 1.475rem;
-            font-family: 'Cindie-2-G';
-            display: block;
-            line-height: 1.25rem;
-            padding: 1rem 1.5rem;
-            text-align: right;
-            letter-spacing: .1em;
-            color: #252b35;
-          }
         }
       }
     }
