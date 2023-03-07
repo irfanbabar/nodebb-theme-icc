@@ -1,6 +1,8 @@
 @import "../../nodebb-theme-persona/theme";
 @import "./less/colours.less";
 
+// @import (less) "./less/header-style.css";
+
 @cindie2-path: "./fonts/cindie-2";
 @space-grotesk-path: "./fonts/space-grotesk";
 @font-face {
@@ -216,66 +218,110 @@ input[type="checkbox"] {
 
 #icc-header {
   background-color: #101820;
-  nav {
-    padding: 12px;
-  }
-  ul.navigation-ul {
+  .inner-cont {
     display: flex;
     align-items: center;
-    gap: 4.5rem;
-    list-style: none;
-    margin: 0;
-    padding-left: 4vw;
-    li:nth-child(1) {
-      img.logo-img {
-        width: 4.5vw;
-        min-width: 40px;
-      }
-    }
-    li:nth-child(2) {
-      position: relative;
-      display: flex;
-      height: 48px;
-      justify-content: center;
-      img { // king image
-        position: absolute;
-        height: 100%;
-        top: -15px;
-        min-width: 69px;
-        width: 5vw;
-      }
-      a {
-        z-index: 1;
-        letter-spacing: .1em;
-        text-transform: uppercase;
-        padding-top: 25px;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin-top: -16px;
-        margin-left: 2px;
-        p {
-          color: black;
-          font-weight: 800;
+    justify-content: space-between;
+    nav {
+      padding: 12px;
+      ul.navigation-ul {
+        display: flex;
+        align-items: center;
+        gap: 4.5rem;
+        list-style: none;
+        margin: 0;
+        padding-left: 4vw;
+        li:nth-child(1) {
+          img.logo-img {
+            width: 4.5vw;
+            min-width: 40px;
+          }
+        }
+        li:nth-child(2) {
+          position: relative;
+          display: flex;
+          height: 48px;
+          justify-content: center;
+          img { // king image
+            position: absolute;
+            height: 100%;
+            top: -15px;
+            min-width: 69px;
+            width: 5vw;
+            @media screen and (max-width: 570px) {
+              top: -3px;
+            }
+          }
+          a {
+            z-index: 1;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding-top: 25px;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-top: -16px;
+            margin-left: 2px;
+            @media screen and (max-width: 570px) {
+              margin-top: -2px;
+            }
+            p {
+              color: black;
+              font-weight: 800;
+              letter-spacing: .1em;
+              font-family: Cindie-2-G;
+              font-size: 2rem;
+              white-space: nowrap;
+              @media screen and (max-width: 600px) {
+                font-size: 1.7rem;
+              }
+            }
+          }
+        }
+        li:nth-child(n+3) {
+          @media screen and (max-width: 570px) {
+            display: none;
+          }
+        }
+        li:nth-child(n+3) > a {
           letter-spacing: .1em;
+          text-transform: uppercase;
+          color: #ffffff;
           font-family: Cindie-2-G;
           font-size: 2rem;
+          line-height: 0.75rem;
+          @media screen and (max-width: 650px) {
+            gap: 1.5rem;
+          }
+        }
+
+        @media screen and (max-width: 720px) {
+          gap: 3rem;
+        }
+        @media screen and (max-width: 650px) {
+          gap: 2rem;
+        }
+        @media screen and (max-width: 600px) {
+          gap: 1.5rem;
         }
       }
     }
-    li:nth-child(n+3) > a {
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: #ffffff;
-      font-family: Cindie-2-G;
-      font-size: 2rem;
-      line-height: 0.75rem;
-    }
-
-    @media screen and (max-width: 720px) {
-      gap: 3rem;
-    }
-    @media screen and (max-width: 650px) {
-      gap: 2rem;
+    .mobile-nav-cont {
+      .hamburger-cont {
+        display: none;
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          img {
+            width: 5vw;
+            max-width: 30px;
+            min-width: 25px;
+          }
+        }
+        @media screen and (max-width: 570px) {
+          display: block;
+        }
+      }
     }
   }
 }
