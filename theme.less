@@ -235,6 +235,7 @@ input[type="checkbox"] {
           img.logo-img {
             width: 4.5vw;
             min-width: 40px;
+            max-width: 70px;
           }
         }
         li:nth-child(2) {
@@ -320,6 +321,26 @@ input[type="checkbox"] {
         }
         @media screen and (max-width: 570px) {
           display: block;
+        }
+        .dropdown-menu {
+          left: -75px;
+          border-radius: 0.6rem;
+          top: 40px;
+          max-width: 160px;
+          min-width: 112px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          text-transform: uppercase;
+          > .dropdown-item {
+            font-size: 1.475rem;
+            font-family: 'Cindie-2-G';
+            display: block;
+            line-height: 1.25rem;
+            padding: 1rem 1.5rem;
+            text-align: right;
+            letter-spacing: .1em;
+            color: #252b35;
+          }
         }
       }
     }

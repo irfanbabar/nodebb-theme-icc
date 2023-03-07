@@ -7,12 +7,12 @@
               class="big-phone:h-12 logo-img"></a></li>
         <li class="flex gap-9 -mt-[24px] relative big-phone:super-hidden"><img
             class="absolute h-12 -z-10 top-[5px] left-[3px] cursor-pointer" src="https://iccstage.net/assets/images/green-crown.svg"><a
-            target="_blank" rel="noreferrer" class="pt-[25px] px-2 uppercase text-black tracking-widest tablet:px-4"
+            rel="noreferrer" class="pt-[25px] px-2 uppercase text-black tracking-widest tablet:px-4"
             href="https://play.iccstage.net/">
             <p class="tablet:ml-2 md-tablet:ml-2">play<!-- --> <span class="tablet:hidden md-tablet:hidden">now</span>
             </p>
           </a></li>
-        <li class="flex gap-8 big-phone:super-hidden"><a target="_blank" class="pt-0.5 uppercase tracking-widest"
+        <li class="flex gap-8 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://icclearningcenter.lumina-previews.com/">Learn</a></li>
         <li class="flex gap-8 big-phone:super-hidden">
           <a class="pt-0.5 uppercase tracking-widest"
@@ -20,9 +20,9 @@
         </li>
         <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://iccstage.net/article/archive/">News</a></li>
-        <li class="flex gap-9 big-phone:super-hidden"><a target="_blank" class="pt-0.5 uppercase tracking-widest"
+        <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://shop.iccstage.net/">Shop</a></li>
-        <li class="flex gap-9 big-phone:super-hidden"><a target="_blank" class="pt-0.5 uppercase tracking-widest"
+        <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="http://forums.iccstage.net/">Forums</a></li>
       </ul>
     </nav>
@@ -35,11 +35,18 @@
             <h4>Sign up</h4>
           </button></div>
       </div>-->
-      <div class="hamburger-cont gap-9 tablet:hidden md-tablet:hidden big-phone:block">
-        <div class="relative inline-block text-left" data-headlessui-state="">
+      <div class="hamburger-cont gap-9 tablet:hidden md-tablet:hidden big-phone:block dropdown">
+        <div class="relative inline-block text-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div><button class="pt-0.5 uppercase font-cindie tracking-widest" id="headlessui-menu-button-:R38m:"
-              type="button" aria-haspopup="menu" aria-expanded="false" data-headlessui-state=""><img
+              type="button" aria-haspopup="menu" aria-expanded="false"><img
                 src="https://iccstage.net/assets/images/burguer.svg" class="cursor-pointer" alt="Burguer menu"></button></div>
+        </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="https://icclearningcenter.lumina-previews.com/">Learn</a>
+          <a class="dropdown-item" href="https://iccstage.net/article/archive/">Watch</a>
+          <a class="dropdown-item" href="https://iccstage.net/article/archive/">News</a>
+          <a class="dropdown-item" href="https://shop.iccstage.net/">Shop</a>
+          <a class="dropdown-item" href="http://forums.iccstage.net/">Forums</a>
         </div>
       </div>
     </div>
