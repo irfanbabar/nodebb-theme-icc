@@ -6,7 +6,7 @@
 				<button type="button" class="navbar-toggle" id="mobile-chats">
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
 					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
-					{buildAvatar(user, "md", true)}
+					<i class="far fa-caret-square-down"></i>
 				</button>
 				{{{ end }}}
 

@@ -10,8 +10,7 @@
 	{{{ end }}}
 	<li class="active">
 		<a href="#profile" data-toggle="tab">
-			{buildAvatar(user, "sm", true, "user-icon")}
-			<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
+			<i class="far fa-caret-square-down"></i>
 		</a>
 	</li>
 </ul>
