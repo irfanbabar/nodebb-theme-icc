@@ -38,7 +38,9 @@
         <div class="dropdown profile-cont">
           <label for="user-control-list-check" class="dropdown-toggle profile-label" data-toggle="dropdown" id="profile_user_dropdown" title="[[global:header.profile]]" role="button">
             <span id="user-header-name" class="visible-xs-inline">{user.username}</span>
-            {buildAvatar(user, "md", true)}
+            <button type="button" class="profile-grey-icon">
+              <img src="https://iccstage.net/assets/images/icons/grey-user.png" width="48"/>
+            </button>
           </label>
           <div class="dropdown-menu profile-dropdown" aria-labelledby="profile_user_dropdown">
             <a class="dropdown-item" href="https://iccstage.net/profile">Your Profile</a>
