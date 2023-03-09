@@ -31,6 +31,8 @@
             href="https://shop.iccstage.net/">Shop</a></li>
         <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="http://forums.iccstage.net/">Forums</a></li>
+        <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
+            href="https://iccstage.net/memberships">Memberships</a></li>
       </ul>
     </nav>
     <!-- IF config.loggedIn -->
@@ -43,6 +45,8 @@
             </button>
           </label>
           <div class="dropdown-menu profile-dropdown" aria-labelledby="profile_user_dropdown">
+            <a class="dropdown-item disabled profile-name" href="javascript:void(0)">{user.username}</a>
+            <div role="presentation" class="divider"></div>
             <a class="dropdown-item" href="https://iccstage.net/profile">Your Profile</a>
             <form method="post" action="{relative_path}/logout" class="dropdown-item">
               <input type="hidden" name="_csrf" value="{config.csrf_token}">
@@ -93,6 +97,7 @@
           <a class="dropdown-item" href="https://iccstage.net/article/archive/">News</a>
           <a class="dropdown-item" href="https://shop.iccstage.net/">Shop</a>
           <a class="dropdown-item" href="http://forums.iccstage.net/">Forums</a>
+          <a class="dropdown-item" href="https://iccstage.net/memberships">Memberships</a>
         </div>
       </div>
     </div>
