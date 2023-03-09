@@ -160,37 +160,9 @@
 							</li>
 							{{{ end }}}
 							{{{ end }}}
-
-							<li role="presentation" class="divider"></li>
-							<li component="user/logout">
-								<form method="post" action="{relative_path}/logout">
-									<input type="hidden" name="_csrf" value="{config.csrf_token}">
-									<input type="hidden" name="noscript" value="true">
-									<button type="submit" class="btn btn-link">
-										<i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span>
-									</button>
-								</form>
-							</li>
 						</ul>
 					</li>
 
-				</ul>
-				<!-- ELSE -->
-				<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
-					<!-- IF allowRegistration -->
-					<li>
-						<a href="[[global:customRegister.path]]">
-							<i class="fa fa-pencil fa-fw hidden-sm hidden-md hidden-lg"></i>
-							<span>[[global:register]]</span>
-						</a>
-					</li>
-					<!-- ENDIF allowRegistration -->
-					<li>
-						<a href="[[global:customLogin.path]]">
-							<i class="fa fa-sign-in fa-fw hidden-sm hidden-md hidden-lg"></i>
-							<span>[[global:login]]</span>
-						</a>
-					</li>
 				</ul>
 				<!-- ENDIF config.loggedIn -->
 				<!-- IF config.searchEnabled -->

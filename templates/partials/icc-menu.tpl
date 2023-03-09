@@ -33,6 +33,35 @@
             href="http://forums.iccstage.net/">Forums</a></li>
       </ul>
     </nav>
+    <!-- IF config.loggedIn -->
+      <div class="auth-btn-cont">
+        <div class="dropdown profile-cont">
+          <label for="user-control-list-check" class="dropdown-toggle profile-label" data-toggle="dropdown" id="profile_user_dropdown" title="[[global:header.profile]]" role="button">
+            <span id="user-header-name" class="visible-xs-inline">{user.username}</span>
+            {buildAvatar(user, "md", true)}
+          </label>
+          <div class="dropdown-menu profile-dropdown" aria-labelledby="profile_user_dropdown">
+            <a class="dropdown-item" href="https://iccstage.net/profile">Your Profile</a>
+            <form method="post" action="{relative_path}/logout" class="dropdown-item">
+              <input type="hidden" name="_csrf" value="{config.csrf_token}">
+              <input type="hidden" name="noscript" value="true">
+              <button type="submit" class="btn btn-link">
+                <span>Sign Out</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    <!-- ELSE -->
+      <div class="auth-btn-cont">
+        <a href="[[global:customLogin.path]]" class="login-btn">
+          <h4>Log in</h4>
+        </a>
+        <a href="[[global:customRegister.path]]" class="sign-up-btn">
+          <h4>Sign Up</h4>
+        </a>
+      </div>
+    <!-- ENDIF config.loggedIn -->
     <div class="flex gap-4 self-center mobile-nav-cont">
       <!-- <div class="flex gap-2 big-phone:absolute big-phone:top-[18px] big-phone:right-[7rem] sm-phone:right-[5.5rem]">
         <div class="flex justify-end gap-4"><button
@@ -59,7 +88,6 @@
               <a class="dropdown-item" href="https://iccstage.net/videos">Videos</a>
             </div>
           </div>
-          <!-- <a class="dropdown-item" href="https://iccstage.net/article/archive/">Watch</a> -->
           <a class="dropdown-item" href="https://iccstage.net/article/archive/">News</a>
           <a class="dropdown-item" href="https://shop.iccstage.net/">Shop</a>
           <a class="dropdown-item" href="http://forums.iccstage.net/">Forums</a>
