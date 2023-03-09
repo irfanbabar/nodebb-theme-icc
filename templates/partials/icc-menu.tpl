@@ -1,5 +1,10 @@
+<!-- IF config.loggedIn -->
 <header
-  class="fixed z-10 w-screen text-lg font-cindie text-white flex justify-between items-center py-4 mx-auto bg-icc_black tablet:pl-7 tablet:pr-7 desktop-three:px-12 px-10">
+  class="header-tag fixed z-10 w-screen text-lg font-cindie text-white flex justify-between items-center py-4 mx-auto bg-icc_black tablet:pl-7 tablet:pr-7 desktop-three:px-12 px-10">
+<!-- ELSE -->
+<header
+  class="header-tag without-signin fixed z-10 w-screen text-lg font-cindie text-white flex justify-between items-center py-4 mx-auto bg-icc_black tablet:pl-7 tablet:pr-7 desktop-three:px-12 px-10">
+<!-- ENDIF config.loggedIn -->
   <div class="flex w-full justify-between max-w-icc m-auto inner-cont">
     <nav class="self-center">
       <ul class="flex gap-12 items-center tablet:gap-8 navigation-ul">
