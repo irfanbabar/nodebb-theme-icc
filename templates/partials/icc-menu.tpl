@@ -44,7 +44,7 @@
       <div class="auth-btn-cont">
         <div class="dropdown profile-cont">
           <label for="user-control-list-check" class="dropdown-toggle profile-label" data-toggle="dropdown" id="profile_user_dropdown" title="[[global:header.profile]]" role="button">
-            <span id="user-header-name" class="visible-xs-inline">{user.username}</span>
+            <span id="user-header-name">{user.username}</span>
             <button type="button" class="profile-grey-icon">
               <img src="https://iccstage.net/assets/images/icons/grey-user.png" width="48"/>
             </button>

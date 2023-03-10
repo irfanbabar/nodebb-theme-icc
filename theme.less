@@ -234,7 +234,6 @@ input[type="checkbox"] {
     padding-bottom: 8px;
     text-transform: uppercase;
     > .dropdown-item, .dropdown .trigger-link-cont > a {
-      // font-size: 1.475rem;
       font-size: 14px;
       font-family: 'Cindie-2-G';
       display: block;
@@ -283,9 +282,6 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: 630px) {
-      justify-content: flex-start;
-    }
     nav {
       padding: 12px;
       ul.navigation-ul {
@@ -295,24 +291,6 @@ input[type="checkbox"] {
         list-style: none;
         margin: 0;
         padding-left: 4vw;
-        @media screen and (max-width: 1200px) {
-          gap: 4rem;
-        }
-        @media screen and (max-width: 1020px) {
-          gap: 3.5rem;
-        }
-        @media screen and (max-width: 940px) {
-          gap: 3rem;
-        }
-        @media screen and (max-width: 820px) {
-          gap: 2rem;
-        }
-        @media screen and (max-width: 790px) {
-          gap: 1.5rem;
-        }
-        @media screen and (max-width: 750px) {
-          gap: 1rem;
-        }
         li:nth-child(1) {
           img.logo-img {
             width: 4.5vw;
@@ -331,14 +309,6 @@ input[type="checkbox"] {
             top: -11px;
             min-width: 69px;
             width: 5vw;
-            @media screen and (max-width: 1200px) {
-              min-width: 62px;
-              top: -8px;
-            }
-            // crown center align to logo
-            @media screen and (max-width: 680px) {
-              top: -3px;
-            }
           }
           a {
             z-index: 1;
@@ -349,32 +319,13 @@ input[type="checkbox"] {
             padding-right: 0.5rem;
             margin-top: -12px;
             margin-left: 2px;
-            @media screen and (max-width: 1200px) {
-              margin-top: -8px;
-            }
-            // crown text center align to logo
-            @media screen and (max-width: 680px) {
-              margin-top: -2px;
-            }
             p {
               color: black;
               letter-spacing: .1em;
               font-family: Cindie-2-G;
               font-size: 2rem;
               white-space: nowrap;
-              @media screen and (max-width: 1470px) {
-                font-size: 1.9rem;
-              }
-              @media screen and (max-width: 1200px) {
-                font-size: 1.6rem;
-              }
             }
-          }
-        }
-        li:nth-child(n+3) {
-          // Hide menu links
-          @media screen and (max-width: 700px) {
-            display: none;
           }
         }
         li:nth-child(n+3) .dropdown-menu {
@@ -393,9 +344,6 @@ input[type="checkbox"] {
           font-family: Cindie-2-G;
           font-size: 2rem;
           line-height: 0.75rem;
-          @media screen and (max-width: 650px) {
-            gap: 1.5rem;
-          }
         }
         li:nth-child(n+3) > a {
           letter-spacing: .1em;
@@ -404,9 +352,6 @@ input[type="checkbox"] {
           font-family: Cindie-2-G;
           font-size: 2rem;
           line-height: 0.75rem;
-          @media screen and (max-width: 650px) {
-            gap: 1.5rem;
-          }
         }
       }
     }
@@ -414,15 +359,6 @@ input[type="checkbox"] {
       display: flex;
       gap: 1.5rem;
       margin-right: 5rem;
-      @media screen and (max-width: 768px) {
-        margin-right: 0;
-      }
-      @media screen and (max-width: 700px) {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10px;
-      }
       // with login content style
       .profile-cont {
         .profile-grey-icon {
@@ -450,14 +386,7 @@ input[type="checkbox"] {
             line-height: 1.75rem;
             font-weight: 400;
             white-space: nowrap;
-          }
-          span#user-header-name.visible-xs-inline {
-            display: inline !important;
-          }
-          @media screen and (max-width: 900px) {
-            span#user-header-name.visible-xs-inline {
-              display: none !important;
-            }
+            display: inline;
           }
           span.avatar {
             background-color: #673ab7;
@@ -470,15 +399,6 @@ input[type="checkbox"] {
         }
         .profile-dropdown {
           .profile-name, .divider { display: none; }
-          @media screen and (max-width: 900px) {
-            .profile-name, .divider { display: block; }
-            .profile-name {
-              padding: 0.5rem 1.5rem;
-              opacity: 0.7;
-            }
-            .divider { margin: 2px 0; }
-            .divider + .dropdown-item { padding-top: 1.5rem; }
-          }
         }
       }
       // without login content style
@@ -532,9 +452,6 @@ input[type="checkbox"] {
     }
     .mobile-nav-cont {
       display: none;
-      @media screen and (max-width: 700px) {
-        display: flex;
-      }
       .hamburger-cont {
         button {
           background-color: transparent;
@@ -554,8 +471,140 @@ input[type="checkbox"] {
   }
 }
 
-// === ICC header media queries ===
 
+
+// === ICC header media queries ===
+// === with login header
+.header-tag {
+  @media screen and (max-width: 1470px) {
+    .inner-cont nav ul.navigation-ul {
+      // crown center align to logo
+      li:nth-child(2) {
+        // crown text center align to logo
+        a p { font-size: 1.9rem !important; }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .inner-cont nav ul.navigation-ul {
+      gap: 4rem !important;
+      // crown center align to logo
+      li:nth-child(2) {
+        img {
+          min-width: 62px !important;
+          top: -8px !important;
+        }
+        // crown text center align to logo
+        a {
+          margin-top: -8px !important;
+          p { font-size: 1.6rem !important; }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    .inner-cont nav ul.navigation-ul {
+      gap: 3.5rem !important;
+    }
+  }
+  @media screen and (max-width: 940px) {
+    .inner-cont nav ul.navigation-ul {
+      gap: 3rem !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .inner-cont .auth-btn-cont {
+      .profile-cont {
+        span#user-header-name {
+          display: none !important;
+        }
+        .profile-dropdown {
+          .profile-name, .divider { display: block !important; }
+          .profile-name {
+            padding: 0.5rem 1.5rem !important;
+            opacity: 0.7 !important;
+          }
+          .divider { margin: 2px 0 !important; }
+          .divider + .dropdown-item { padding-top: 1.5rem !important; }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .inner-cont nav ul.navigation-ul {
+      gap: 2rem !important;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .inner-cont nav ul.navigation-ul {
+      gap: 1.5rem !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .inner-cont .auth-btn-cont {
+      margin-right: 0 !important;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .inner-cont nav ul.navigation-ul {
+      gap: 1rem !important;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .inner-cont {
+      // Hide menu links
+      nav ul.navigation-ul {
+        li:nth-child(n+3) {
+          display: none !important;
+        }
+      }
+      .auth-btn-cont {
+        flex: 1 !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        margin-right: 10px !important;
+      }
+      .mobile-nav-cont {
+        display: flex !important;
+      }
+    }
+  }
+
+  // crown center align to logo
+  @media screen and (max-width: 680px) {
+    .inner-cont nav ul.navigation-ul {
+      li:nth-child(2) {
+        img {
+          top: -3px !important;
+        }
+        // crown text center align to logo
+        a {
+          margin-top: -2px !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .inner-cont nav ul.navigation-ul {
+      li:nth-child(n+3) > .dropdown #dropdownMenuLink a,
+      li:nth-child(n+3) > a {
+        gap: 1.5rem !important;
+      }
+    }
+  }
+
+  // navigation main section alignment
+  @media screen and (max-width: 630px) {
+    .inner-cont {
+      justify-content: flex-start !important;
+    }
+  }
+}
+
+
+
+// === without login header
 .header-tag.without-signin {
   @media screen and (max-width: 1200px) {
     // menu-item gaps
