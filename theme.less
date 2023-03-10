@@ -546,6 +546,9 @@ input[type="checkbox"] {
             min-width: 25px;
           }
         }
+        .dropdown-menu .play-now-link {
+          display: none;
+        }
       }
     }
   }
@@ -622,9 +625,14 @@ input[type="checkbox"] {
   }
 
   @media screen and (max-width: 400px) {
-    // menu-item gaps
+    // crown hide
     .inner-cont nav ul.navigation-ul li:nth-child(2) {
       display: none !important;
+    }
+
+    // crown text show in dropdown
+    .inner-cont .mobile-nav-cont .dropdown-menu .play-now-link {
+      display: block !important;
     }
   }
 }

@@ -89,6 +89,7 @@
                 src="https://iccstage.net/assets/images/burguer.svg" class="cursor-pointer" alt="Burguer menu"></button></div>
         </div>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuHamburger">
+          <a class="dropdown-item play-now-link" href="https://play.iccstage.net/">Play Now</a>
           <a class="dropdown-item" href="https://icclearningcenter.lumina-previews.com/">Learn</a>
           <div class="dropdown">
             <div id="dropdownMenuSubLink" class="dropdown-toggle trigger-link-cont" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
