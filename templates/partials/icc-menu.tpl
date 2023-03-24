@@ -65,10 +65,10 @@
       </div>
     <!-- ELSE -->
       <div class="auth-btn-cont">
-        <a href="[[global:customLogin.path]]" class="login-btn">
+        <a href="{config.customLoginUrl}" class="login-btn">
           <h4>Log in</h4>
         </a>
-        <a href="[[global:customRegister.path]]" class="sign-up-btn">
+        <a href="{config.customRegisterUrl}" class="sign-up-btn">
           <h4>Sign Up</h4>
         </a>
       </div>

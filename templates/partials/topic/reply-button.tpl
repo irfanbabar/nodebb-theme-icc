@@ -22,6 +22,6 @@
 <!-- ELSE -->
 
 <!-- IF !privileges.topics:reply -->
-<a component="topic/reply/guest" href="[[global:customLogin.path]]" class="btn btn-sm btn-primary">[[topic:guest-login-reply]]</a>
+<a component="topic/reply/guest" href="{config.customLoginUrl}" class="btn btn-sm btn-primary">[[topic:guest-login-reply]]</a>
 <!-- ENDIF !privileges.topics:reply -->
 <!-- ENDIF loggedIn -->
