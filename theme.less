@@ -290,7 +290,7 @@ input[type="checkbox"] {
         gap: 4.2rem;
         list-style: none;
         margin: 0;
-        padding-left: 4vw;
+        padding-left: 1vw;
         li:nth-child(1) {
           img.logo-img {
             width: 4.5vw;
@@ -584,22 +584,6 @@ input[type="checkbox"] {
       }
     }
   }
-
-  @media screen and (max-width: 650px) {
-    .inner-cont nav ul.navigation-ul {
-      li:nth-child(n+3) > .dropdown #dropdownMenuLink a,
-      li:nth-child(n+3) > a {
-        gap: 1.5rem !important;
-      }
-    }
-  }
-
-  // navigation main section alignment
-  @media screen and (max-width: 630px) {
-    .inner-cont {
-      justify-content: flex-start !important;
-    }
-  }
 }
 
 
@@ -636,7 +620,8 @@ input[type="checkbox"] {
     .inner-cont .auth-btn-cont {
       gap: 1rem !important;
       > a {
-        padding: 11.5px 10px 6.5px 10px; height: 40px !important;
+        padding: 11.5px 10px 6.5px 10px !important;
+        height: 40px !important;
         > h4 { font-size: 16px !important; }
       }
     }
@@ -666,10 +651,19 @@ input[type="checkbox"] {
       gap: 1.5rem !important;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 770px) {
     // menu-item gaps
     .inner-cont nav ul.navigation-ul {
       gap: 1rem !important;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    // menu-item gaps
+    .inner-cont nav ul.navigation-ul {
+      padding-left: 0 !important;
+    }
+    .inner-cont nav {
+      padding-left: 0 !important;
     }
   }
 
