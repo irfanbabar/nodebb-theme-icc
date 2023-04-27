@@ -1,6 +1,6 @@
 {
   "name": "@chessclub/nodebb-theme-icc",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Enter a description here",
   "main": "lib/theme.js",
   "keywords": [],

@@ -34,7 +34,7 @@
             href="https://iccstage.net/article/archive/">News</a></li>
         <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://shop.iccstage.net/">Shop</a></li>
-        <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
+        <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest active"
             href="http://forums.iccstage.net/">Forums</a></li>
         <li class="flex gap-9 big-phone:super-hidden"><a class="pt-0.5 uppercase tracking-widest"
             href="https://iccstage.net/memberships">Memberships</a></li>
