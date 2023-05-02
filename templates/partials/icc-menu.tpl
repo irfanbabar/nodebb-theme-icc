@@ -102,7 +102,7 @@
           </div>
           <a class="dropdown-item" href="https://iccstage.net/article/archive/">News</a>
           <a class="dropdown-item" href="https://shop.iccstage.net/">Shop</a>
-          <a class="dropdown-item" href="http://forums.iccstage.net/">Forums</a>
+          <a class="dropdown-item active" href="http://forums.iccstage.net/">Forums</a>
           <a class="dropdown-item" href="https://iccstage.net/memberships">Memberships</a>
         </div>
       </div>
